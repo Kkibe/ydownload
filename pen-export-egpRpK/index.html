@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by leli soenarko</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<ul class="topnav" id="myTopnav">
+   <div class="wrapper">
+  <header><h1><a href="/"><img alt="" border="0" src="https://1.bp.blogspot.com/-4ROKqoF4MTI/WGNcrViYnkI/AAAAAAAAEEk/Sqbq5DI4IBg2z9DwEymlf6GCEoNOJuRkgCLcB/s1600/logoheader.png" title="Youtube Downloader" /></a></h1></header>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li>
+      </div>
+</ul>
+
+<main id="main" class="main">
+	<section id="banner" class="banner">
+		<h2 class="banner-title container">Youtube To MP3, MP4, 3GP Converter</h2>
+    <div id="container">
+		<!--
+		I must add time() function to trick the bad IE's cache.
+		-->
+		<form method="get" id="form" onsubmit="sndReq('<?php echo time();?>');return false;">
+			<input class="downloadc" type="text" name="q" id="q" size="40" /> <input class="now"  type="submit" name="b" id="b" value="Download" />
+		</form>
+		<div id="result"><b>Example:</b> <u style='color:#EEE389'>https://www.youtube.com/watch?v=Y_xhRQXobG0</u></div>
+ </div>
+    
+    
+		<p class="banner-text container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, nulla!</p>
+		<a href="#services" class="button">Start Here</a>
+	</section>
+	<section id="services" class="container services group">
+		<section id="service1" class="service">
+			<h3 class="service-title">Duis aute irure</h3>
+			<p class="service-text">Quo dolor unde voluptate. Nihil minus et, cupiditate, atque, molestiae eligendi quaerat nam illum maxime debitis error.</p>
+		</section>
+		<section id="service2" class="service">
+			<h3 class="service-title">Duis aute irure</h3>
+			<p class="service-text">Porro voluptatem eligendi saepe dolorem non corporis, laboriosam, beatae dolore eum quae voluptate. Reiciendis, sequi quo. Quod.</p>
+		</section>
+		<section id="service3" class="service">
+			<h3 class="service-title">Duis aute irure</h3>
+			<p class="service-text">Accusantium quasi, placeat nam. Magnam nam harum soluta illum eius, accusantium quidem enim commodi illo maiores cum?</p>
+		</section>
+	</section>
+
+  
+	<section id="work" class="container work">
+		<h2>Recent Work</h2>
+		<figure class="work-figure"><img class="work-img" src="https://unsplash.it/262/320?image=201" alt=""><figcaption class="work-figcaption">Project Title</figcaption></figure>
+		<figure class="work-figure"><img class="work-img" src="https://unsplash.it/262/320?image=20" alt=""><figcaption class="work-figcaption">Project Title</figcaption></figure>
+		<figure class="work-figure"><img class="work-img" src="https://unsplash.it/262/320?image=36" alt=""><figcaption class="work-figcaption">Project Title</figcaption></figure>
+		<figure class="work-figure"><img class="work-img" src="https://unsplash.it/262/320?image=464" alt=""><figcaption class="work-figcaption">Project Title</figcaption></figure>
+	</section>
+	<section id="join" class="join">
+		<h2 class="join-title">Join our subscribers</h2>
+		<p class="join-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, perspiciatis.</p>
+		<a href="" class="button join-button">Subscribe</a>
+	</section>
+	<section id="social" class="container social group">
+		<ul class="social-buttons">
+			<li><a href="#" class="zocial-facebook"></a></li>
+			<li><a href="#" class="zocial-twitter"></a></li>
+			<li><a href="#" class="zocial-dribbble"></a></li>
+			<li><a href="#" class="zocial-google"></a></li>
+		</ul>
+	</section>
+</main>
+<footer id="footer" class="footer group">
+	<section class="footer-section">
+		<h3 id="locationHeading" class="footer-section-heading">Location</h3>
+		<ul class="footer-section-list">
+		<li><address>1401 South Grand Ave <br> Los Angeles, CA 90015 <br> (213) 748-2411</address></li>
+		<li><a href="">See it in the map</a></li>
+		</ul>
+	</section>
+	<section class="footer-section">
+		<h3 id="companyHeading" class="footer-section-heading">Company</h3>
+		<ul class="footer-section-list">
+		<li><a href="#">Our story</a></li>
+		<li><a href="#">Mission</a></li>
+		<li><a href="#">Journal</a></li>
+		<li><a href="#">Careers</a></li>
+		</ul>
+	</section>
+	<section class="footer-section">
+		<h3 id="supportHeading" class="footer-section-heading">Support</h3>
+		<ul class="footer-section-list">
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">Contact Us</a></li>
+		<li><a href="#">Policies</a></li>
+		</ul>
+	</section>
+	<section class="footer-section">
+		<h3 id="minimaHeading" class="footer-section-heading">Minima</h3>
+		<ul class="footer-section-list">
+		<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium?</p></li>
+		<li><p>PSD Template by <a href="https://pixelhint.com">pixelhint.com</a></p></li>
+		</ul>
+	</section>
+</footer>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by bobby</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Video Player in JavaScript | CodingLab </title>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+   </head>
+<body>
+  <section>
+    <div class="container">
+      <div class="main-video">
+          <video src="videos/button.mp4" autoplay muted controls></video>
+          <i class='bx bx-x close'></i>
+      </div>
+      <div class="videos">
+        <img src="videos/button.mp4"></img>
+        <i class='bx bx-play-circle'></i>
+      </div>
+      <div class="videos">
+        <img src="videos/website.mp4"></img>
+        <i class='bx bx-play-circle'></i>
+      </div>
+      <div class="videos">
+        <img src="videos/sidebar.mp4"></img>
+        <i class='bx bx-play-circle'></i>
+      </div>
+      <div class="videos">
+        <img src="videos/productCard.mp4"></img>
+        <i class='bx bx-play-circle'></i>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const section = document.querySelector("section"),
+    mainVideo = document.querySelector(".main-video video"),
+     videos = document.querySelectorAll(".videos"),
+     close = document.querySelector(".close");
+
+     for (var i = 0; i < videos.length; i++) {
+       videos[i].addEventListener("click", (e)=>{
+         const target = e.target;
+         section.classList.add("active");
+         target.classList.add("active");
+         let src = document.querySelector(".videos.active video").src;
+         mainVideo.src = src;
+
+         close.addEventListener("click", ()=>{
+           section.classList.remove("active");
+           target.classList.remove("active");
+           mainVideo.src = "";
+         });
+       });
+     };
+  </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
